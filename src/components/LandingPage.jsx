@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getServices } from '../store/ServicesSlice';
 import { Link } from 'react-router-dom';
-import config from '../components/config/config';
 
 export default function LandingPage() {
   const dispatch = useDispatch();
@@ -24,7 +23,7 @@ export default function LandingPage() {
               className="flex flex-col border shadow-sm rounded-lg md:max-w-[350px]"
             >
               <img
-                src={`${config.BASE_URL}/image/service/${service.image}`}
+                src={`${service.image}`}
                 alt={service.title}
                 className="md:h-32 h-40  rounded-t-lg overflow-hidden"
               />

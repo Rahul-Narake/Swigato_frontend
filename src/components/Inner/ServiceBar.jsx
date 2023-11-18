@@ -21,14 +21,14 @@ export default function ServiceBar() {
           {/* Delivery service */}
           <div
             className={`flex flex-col md:flex-row md:space-x-3 items-center cursor-pointer ${
-              selectedService === '64fef4748adf5aa97bbbf46e'
+              selectedService === '65588f8cd43571121ed7a93c'
                 ? 'border-b-2 border-red-500'
                 : ''
             } pb-2`}
             onClick={(e) => {
-              dispatch(setSelectedService('64fef4748adf5aa97bbbf46e'));
+              dispatch(setSelectedService('65588f8cd43571121ed7a93c'));
               dispatch(
-                getRestaurants({ city, service: '64fef4748adf5aa97bbbf46e' })
+                getRestaurants({ city, service: '65588f8cd43571121ed7a93c' })
               );
             }}
           >
@@ -46,14 +46,14 @@ export default function ServiceBar() {
           {/* dining service */}
           <div
             className={`flex flex-col md:flex-row md:space-x-3 items-center cursor-pointer pb-2  ${
-              selectedService === '64fef41e8adf5aa97bbbf46c'
+              selectedService === '65589079d43571121ed7a943'
                 ? 'border-b-2 border-red-500'
                 : ''
             }`}
             onClick={(e) => {
-              dispatch(setSelectedService('64fef41e8adf5aa97bbbf46c'));
+              dispatch(setSelectedService('65589079d43571121ed7a943'));
               dispatch(
-                getRestaurants({ city, service: '64fef41e8adf5aa97bbbf46c' })
+                getRestaurants({ city, service: '65589079d43571121ed7a943' })
               );
             }}
           >
@@ -71,14 +71,14 @@ export default function ServiceBar() {
           {/* nighlife service */}
           <div
             className={`flex flex-col md:flex-row md:space-x-3 items-center cursor-pointer pb-2 ${
-              selectedService === '64fef32dfef4e12a0725ad93'
+              selectedService === '655890add43571121ed7a946'
                 ? 'border-b-2 border-red-500'
                 : ''
             }`}
             onClick={(e) => {
-              dispatch(setSelectedService('64fef32dfef4e12a0725ad93'));
+              dispatch(setSelectedService('655890add43571121ed7a946'));
               dispatch(
-                getRestaurants({ city, service: '64fef32dfef4e12a0725ad93' })
+                getRestaurants({ city, service: '655890add43571121ed7a946' })
               );
             }}
           >
